@@ -1,0 +1,20 @@
+<%- include('partials/header.ejs') %> 
+<%- include('partials/navbar.ejs') %> 
+
+<div class="container">
+<!-- Movies currenlty playing -->
+<h1>Now Playing At A Theater Near You:</h1>
+<br>
+<form action="">
+<% movies.forEach(function(el){ %>
+    <h2><%- el.title %></h2>
+    <img class="mb-2"src="https://image.tmdb.org/t/p/w500<%= el.poster_path %>">
+    <h6 class="mb-3"><%= el.overview %><h6>
+    <h4 class="mb-5">Rating: <%= el.vote_average%> out of 10 stars</h4>
+    <input type="checkbox" name="IAMTHEKEY" id="" value="">
+<% }) %>
+<button type="submit"></button>
+</form>
+</div>
+
+<%- include('partials/footer.ejs') %>
