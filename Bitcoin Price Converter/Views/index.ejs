@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %> 
+<div class="container">
+    <form action="/price">
+        <input type="radio" name="country" value='USD' id="">USD
+        <input type="radio" name="country" value='GBP' id="">GBP
+        <input type="radio" name="country" value='EUR' id="">EUR
+        <br><br>
+        <input id="btn" type="submit" value="Get Price">
+    </form>
+    <br>
+    <h2>This is the current price: <%- symbol %> <%= rate %>
+    <br>
+        
+    </h2>
+</div>
+<p><a href="https://www.coindesk.com/price/bitcoin">Powered by CoinDesk</a></p>
+<%- include('partials/footer.ejs') %> 
