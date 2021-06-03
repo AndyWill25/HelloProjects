@@ -1,14 +1,4 @@
 
-// NOTE: Original trial class code
-
-//AJAX skeleton
-// $.ajax({
-//   url: something,
-//   method: something
-// })
-// .done()
-// .fail()
-
 
 //CREATE
 $("input").keypress(function(event) {
