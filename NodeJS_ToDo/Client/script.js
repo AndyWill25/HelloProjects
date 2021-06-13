@@ -1,5 +1,3 @@
-
-
 //CREATE
 $("input").keypress(function(event) {
     if (event.which === 13 && $(this).val() !== "") {
@@ -79,7 +77,4 @@ $("input").keypress(function(event) {
     .fail(function(err){
       console.error('Issue deleting todo on backend')
     })
-
-
-
   });

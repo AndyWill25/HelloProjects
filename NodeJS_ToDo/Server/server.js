@@ -3,14 +3,13 @@ const app = express()
 const logger = require('morgan')
 app.use(logger(process.env.NODE_ENV))
 
-
 const cors = require('cors')
 app.use(cors())
 
 const bodyParser = require('body-parser')
-// parse application/x-www-form-urlencoded
+
 app.use(bodyParser.urlencoded({ extended: false }));
-// parse application/json
+
 app.use(bodyParser.json());
 
 app.use(express.static('../Client'))
@@ -44,7 +43,6 @@ app.get('/todos', (req, res)=>{
     res.json(toDoArr)
 })
 
-
 let num = 4
 //C - CREATE - POST Method
 app.post('/todos', (req, res)=>{
@@ -54,7 +52,6 @@ app.post('/todos', (req, res)=>{
             description: req.body.description,
             isComplete: false
         }
-
     toDoArr.push(newToDo)
     res.status(201).json(newToDo)
 })
@@ -65,7 +62,6 @@ app.delete('/todos/:id', (req, res)=>{
     let requestedToDoIndex = toDoArr.findIndex(function(todo){
         return todo.id === requestedToDoID
     })
-
     if(requestedToDoIndex >= 0){
         let deletedToDo = toDoArr.splice(requestedToDoIndex, 1)
         res.status(223).send(deletedToDo)
@@ -74,22 +70,18 @@ app.delete('/todos/:id', (req, res)=>{
     }
 })
 
-
 //U - UPDATE - PUT Method
 app.put('/todos/:id', (req, res)=>{
     let requestedToDoID = parseInt(req.params.id)
     let requestedToDo = toDoArr.find(function(todo){
         return todo.id === requestedToDoID
     })
-
     if(requestedToDo !== undefined){
         requestedToDo.isComplete = !requestedToDo.isComplete
         res.status(224).send(requestedToDo)
     } else {
         res.status(400).send('ID does not exist for PUT backend.')
     }
-
-  
 })
 
 app.listen(PORT, ()=>{
