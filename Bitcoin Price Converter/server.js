@@ -23,7 +23,6 @@ app.get('/price', (req, res)=>{
     .then(data => {
         let rate = data.bpi[req.query.country].rate_float.toFixed(2); // sets value 2 decimal places
         let symbol = data.bpi[req.query.country].symbol; // sets symbol based on country
-        // NOTE: same as res.render('index.ejs',{rate: rate, symbol:symbol});
         res.render("index.ejs", { rate, symbol })
     })
     .catch(error =>{
