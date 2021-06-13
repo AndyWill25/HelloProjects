@@ -39,7 +39,6 @@ class Todos extends React.Component{
     }
 
     handleChange = event  => {
-        // console.log('handleChange: the target is:', event.target)
         this.setState({
             newTodo: event.target.value
         })

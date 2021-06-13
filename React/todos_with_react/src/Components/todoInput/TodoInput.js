@@ -22,8 +22,6 @@ class TodoInput extends React.Component{
                     type="text" 
                     placeholder='Enter new task here'
                     name='todoInput'
-                    // lets set up ref with a function, for flexibility(later use)
-                    // ref={r => {this.todoInput = r}}
                     onChange={this.props.handleChange}
                     value={this.props.newTodo}
                     />
