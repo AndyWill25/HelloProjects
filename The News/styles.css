@@ -1,0 +1,103 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eaf0f2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+nav {
+    height: 75px;
+    font-size: 25px;
+    background-color: #263238;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: inline-block;
+    text-align: left;
+    padding: 15px 35px;
+    color: white;
+    margin-top: 5px;
+}
+
+section {
+    padding-left: 30px;
+}
+
+#logo {
+    font-size: 42px;
+    padding: 15px 35px;
+    color: white;
+    line-height: 35px;
+}
+
+.dropList {
+    color: #eaf0f2;
+    background-color: #f9f9f9;
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.dropList a {
+    color: white;
+    padding: 15px 20px;
+    height: 45px;
+    line-height: 45px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop:hover {
+    background-color: #546E7A;
+}
+
+.drop:hover .dropList {
+    background-color: #263238;
+    max-height: 500px;
+    display: block;
+    transition: max-height .6s;
+}
+
+.dropList a:hover {
+    color: #CFD8DC;
+}
+
+footer {
+    color: #B0BEC5;
+    background-color: #263238;
+    text-align: center;
+    padding: 50px;
+    margin-top: 75px;
+    font-size: 20px;
+}
+
+footer h1 {
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+.footlink a {
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.footlink a:hover {
+    color: #CFD8DC;
+}
