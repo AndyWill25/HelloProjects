@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+}
+
+#background1{
+    background: url(backgrounds/background1.jpg) center center no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#background2{
+    background: url(backgrounds/background2.jpg) center center no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#background3{
+    background: url(backgrounds/background3.jpg) center center no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#message {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#message h1 {
+    font-size: 60px;
+
+}
+
+footer h6 {
+    color: blue;
+}
+
+footer a {
+    color: white;
+}
+
+.img-thumbnail {
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+
+.footerlogo {
+    width: 120px;
+    height: 45px;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.btn-success:focus {
+    border: 3px solid blue;
+}
+
+#footer {
+    background: #263228;
+    color: white;
+    padding: 30px 0;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.coffee {
+    width: 550px;
+    height: 500px;
+}
+
+.pool {
+    width: 550px;
+    height: 500px;
+}
+
+.building {
+    width: 550px;
+    height: 500px; 
+}
+
+.section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.mid {
+    background: #262f36;
+    color: rgb(168, 167, 167);
+}
+
+.mid h2 {
+    color: white;
+}
