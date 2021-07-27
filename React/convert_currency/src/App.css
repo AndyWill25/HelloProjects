@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: url("https://y.yarn.co/bd8fdbd4-04ab-4464-aa55-50db8955bb5b_text.gif");
+  background-size: 100%;
+}
+
+h1  {
+  margin: 0;
+  font-size: 40px;
+  color: aliceblue;
+}
+
+select {
+  margin-left: .5rem;
+}
+
+.input {
+  border: 1px solid blue;
+  border-radius: .5em;
+  padding: .30rem;
+  width: 8em;
+}
+
+.equal {
+  font-size: 2rem;
+  font-weight: bold;
+  color: aliceblue;
+}
